@@ -7,7 +7,7 @@ The dependent variable, loan_status, was imbalanced, with a majority of loans be
 
 ## Results
 Accuracy:
-* 99% overall accuracy<br/>
+* 99% overall accuracy
 Precision:
 * Class 0 (healthy loans): 1.00 (perfect precision)
 * Class 1 (high-risk loans): 0.86
