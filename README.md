@@ -7,7 +7,7 @@ The dependent variable, loan_status, was imbalanced, with a majority of loans be
 
 ## Results
 Machine Learning Model 1 (Logistic Regression):
-* Accuracy: 99% overall accuracy
+* Accuracy: 99% overall accuracy<br/>
 * Precision:
 * Class 0 (healthy loans): 1.00 (perfect precision)
 * Class 1 (high-risk loans): 0.86
