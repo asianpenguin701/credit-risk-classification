@@ -18,6 +18,11 @@ F1-Score:</br>
 * Class 0: 1.00</br>
 * Class 1: 0.90
 
+- **Class 0 (Healthy Loans)**:
+  - Recall: **0.99** → The model correctly identifies 99% of all healthy loans.
+- **Class 1 (High-Risk Loans)**:
+  - Recall: **0.94** → The model correctly identifies 94% of all high-risk loans.
+
 ## Summary
 The logistic regression model performed exceptionally well, achieving high accuracy and strong metrics across both loan classes. It performed best for predicting healthy loans (0), with perfect precision and near-perfect recall. For high-risk loans (1), while precision was slightly lower (0.86), the model demonstrated strong recall (0.94), which is critical for identifying risky loans.
 
