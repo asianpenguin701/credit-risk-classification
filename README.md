@@ -39,5 +39,5 @@ Performance depends on the problem we are trying to solve:
 * If the goal is to minimize false negatives (i.e., failing to identify high-risk loans), the model's high recall for Class 1 (0.94) makes it effective for identifying risky loans.
 * If minimizing false positives (i.e., incorrectly classifying healthy loans as high-risk) is more critical, the model performs better for Class 0, where it achieves perfect precision.
 
-Overall, this model is recommended for tasks prioritizing balanced performance, with a slight emphasis on identifying high-risk loans, as it maintains high recall and accuracy across both classes. If further optimization is needed for high-risk loans, techniques like class rebalancing or adjusting thresholds could be explored.
+Overall, this model is recommended for tasks prioritizing balanced performance, with a slight emphasis on identifying high-risk loans, as it maintains high recall and accuracy across both classes. If further optimization is needed for high-risk loans, other techniques could be explored.
 
