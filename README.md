@@ -6,22 +6,29 @@ In this analysis, the primary goal was to evaluate the performance of a machine 
 The dependent variable, loan_status, was imbalanced, with a majority of loans being healthy. This was confirmed using value_counts to show the distribution of loan_status: the dataset contained 15,001 healthy loans and 507 high-risk loans. The analysis involved the following stages: data preprocessing (separating features and labels, splitting data into training and testing sets), fitting a logistic regression model, generating predictions, and evaluating model performance using a classification report and confusion matrix. The LogisticRegression algorithm was selected due to its simplicity and efficiency for binary classification tasks. Metrics such as accuracy, precision, recall, and F1-score were used to evaluate the model.
 
 ## Results
-Accuracy:
-* 99% overall accuracy<br />
-Precision<br />
-* Class 0 (healthy loans): 1.00 (perfect precision)
-* Class 1 (high-risk loans): 0.86
-Recall:</br>
-* Class 0 (healthy loans): 0.99</br>
-* Class 1 (high-risk loans): 0.94</br>
-F1-Score:</br>
-* Class 0: 1.00</br>
-* Class 1: 0.90
 
-- **Class 0 (Healthy Loans)**:
-  - Recall: **0.99** → The model correctly identifies 99% of all healthy loans.
-- **Class 1 (High-Risk Loans)**:
-  - Recall: **0.94** → The model correctly identifies 94% of all high-risk loans.
+| Metric           | Class 0 (Healthy Loans) | Class 1 (High-Risk Loans) | Overall  |
+|-------------------|--------------------------|---------------------------|----------|
+| **Accuracy**      |                          |                           | **99%**  |
+| **Precision**     | 1.00 (Perfect Precision) | 0.86                      |          |
+| **Recall**        | 0.99                     | 0.94                      |          |
+| **F1-Score**      | 1.00                     | 0.90                      |          |
+
+- **Accuracy**:
+  - Overall accuracy: **99%**.
+  - This means the model correctly predicts the loan status for 99% of the cases.
+
+- **Precision**:
+  - Class 0 (Healthy Loans): **1.00** → Perfect precision, indicating no false positives.
+  - Class 1 (High-Risk Loans): **0.86** → 86% of predicted high-risk loans are actually high-risk.
+
+- **Recall**:
+  - Class 0 (Healthy Loans): **0.99** → The model identifies 99% of all healthy loans correctly.
+  - Class 1 (High-Risk Loans): **0.94** → The model identifies 94% of all high-risk loans correctly.
+
+- **F1-Score**:
+  - Class 0 (Healthy Loans): **1.00** → Perfect balance between precision and recall.
+  - Class 1 (High-Risk Loans): **0.90** → Indicates good overall performance for high-risk loans.
 
 ## Summary
 The logistic regression model performed exceptionally well, achieving high accuracy and strong metrics across both loan classes. It performed best for predicting healthy loans (0), with perfect precision and near-perfect recall. For high-risk loans (1), while precision was slightly lower (0.86), the model demonstrated strong recall (0.94), which is critical for identifying risky loans.
