@@ -30,9 +30,7 @@ The purpose of this analysis was to evaluate a machine learning model for predic
   - Class 1 (High-Risk Loans): **0.90** → Indicates good overall performance for high-risk loans.
 
 ## Summary
-The logistic regression model seems to perform best for predicting healthy loans (Class 0), as it achieves perfect precision (1.00) and F1-score (1.00), along with a recall of 0.99. This indicates that the model is highly reliable in identifying and predicting healthy loans without any false positives.
-
-However, the model also performs well for high-risk loans (Class 1), achieving a strong recall of 0.94 and an F1-score of 0.90, although its precision for Class 1 is slightly lower at 0.86, indicating some false positives.
+The logistic regression model seems to perform best for predicting healthy loans (Class 0), as it achieves perfect precision (1.00) and F1-score (1.00), along with a recall of 0.99. This indicates that the model is highly reliable in identifying and predicting healthy loans without any false positives. However, the model also performs well for high-risk loans (Class 1), achieving a strong recall of 0.94 and an F1-score of 0.90, although its precision for Class 1 is slightly lower at 0.86, indicating some false positives.
 
 Overall, this model is recommended for tasks prioritizing balanced performance, with a slight emphasis on identifying high-risk loans, as it maintains high recall and accuracy across both classes. If further optimization is needed for high-risk loans, other techniques could be explored.
 
